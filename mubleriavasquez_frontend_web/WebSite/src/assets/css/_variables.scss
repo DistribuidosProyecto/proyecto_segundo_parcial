@@ -1,0 +1,58 @@
+$font_stack_1: 'Poppins', sans-serif;
+$font_stack_2: 'Poppins', sans-serif;
+$body-font: 'Poppins',
+sans-serif;
+$title-font: 'Poppins',
+sans-serif;
+/*Palette Color*/
+
+$paletteColor1: #c09f80;//Cafe
+$paletteColor2: #76323F;//Vino
+$paletteColor3: #565656;//Gris
+$paletteColor4: #283618;//Verde Oscuro
+$paletteColor5: #d7cec7ff;//Blanco Similar
+
+/*Color Variables*/
+
+$previewItem: gainsboro;
+
+$title-color    : #2a2a2a;
+$text-color     : #797979;
+$offwhite       : #f6f6f6;
+$white: #fff;
+
+$white_color: #fff;
+$black_color: #000;
+$menu_color: #000;
+
+$primary_color: #ff3368;
+
+$heading_color: #1a1a1a;
+
+$font_1: #666666;
+$font_2: #222222;
+$font_3: #7f7f7f;
+$font_4: #8a8a8a;
+$font_5: #999999;
+$font_6: #666666;
+$font_7: #777777;
+$font_8: #888888;
+$font_d: #dddddd;
+
+$border_color: #edeff2;
+
+$btn_subs_color_hoov: #286318;
+
+/* Whatsapp Color*/
+$whatsapp_color1: #4ab969;
+$whatsapp_color2: #25d366;
+
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$tab:'(max-width: 991px)';
+$small_mobile:'(max-width: 576px)';
+$xs_mobile:'(max-width: 420px)';
+$sm_mobile:'only screen and (min-width: 421px) and (max-width: 575px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1440px)';
+$extra_big_screen: 'only screen and (min-width: 1200px) and (max-width: 3640px)';

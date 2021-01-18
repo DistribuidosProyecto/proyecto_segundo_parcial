@@ -1,0 +1,42 @@
+<!--Inicio Whatsapp Flating Btn-->
+
+<a class="whatsappChat" [hidden]="WhatsappChat" (click)="WhatsappHidden()">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<!--End Whatsapp Flating Btn-->
+
+<!-- Chat Whatsapp Inicio -->
+<div class="live-chat" [hidden]="!WhatsappChat">
+  <div class="clearfix" (click)="WhatsappHidden()">
+    <a href="#" class="chat-close">x</a>
+
+    <h4>Muebleria Vasquez</h4>
+  </div>
+
+  <div class="chat">
+    <div class="chat-history">
+      <div class="chat-message">
+        <div class="chat-message-content">
+          <p>
+            Hola, nosotros tenemos los mejores precios del mercado, somos
+            expertos en la fabricación y mantenimiento de toda clase muebles.
+          </p>
+        </div>
+        <!-- end chat-message-content -->
+      </div>
+      <!-- end chat-message -->
+    </div>
+    <!-- end chat-history -->
+  </div>
+  <!-- end chat -->
+
+  <div class="go">
+    <a
+      href="https://api.whatsapp.com/send?phone=593985349480&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202"
+      target="_blank"
+      >Continuar con Whatsapp</a
+    >
+  </div>
+</div>
+<!-- end live-chat -->
+<!-- Chat Whatsapp End -->

@@ -1,0 +1,208 @@
+// variable scss
+@import "../../../../assets/css/variables";
+@import "../../../../assets/css/mixins";
+
+.btnElevation {
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.inputBoxShadow {
+  -moz-box-shadow: inset 0 0 12px rgba(#000000, 0.7);
+  -webkit-box-shadow: inset 0 0 12px rgba(#000000, 0.7);
+  box-shadow: inset 0 0 12px rgba(#000000, 0.7);
+}
+.subscribe_part {
+  background-color: $paletteColor2;
+  .subscribe_part_content {
+    text-align: center;
+    h2 {
+      color: $white;
+      @media #{$tab} {
+        font-size: 25px;
+      }
+      @media #{$medium_device} {
+        font-size: 30px;
+      }
+    }
+    p {
+      color: $white;
+    }
+  }
+  .subscribe_form {
+    margin: 0 auto;
+    margin-top: 45px;
+    position: relative;
+    max-width: 558px;
+
+    input {
+      border: 1px solid $white;
+      width: 100%;
+      background-color: transparent;
+      color: $white;
+      border-radius: 50px;
+      padding: 19px 30px;
+      line-height: 20px;
+      @extend .inputBoxShadow;
+    }
+    .btn_1 {
+      padding: 15px 30px;
+      line-height: 16px;
+      border-radius: 50px;
+      position: absolute;
+      color: white;
+      right: 5px;
+      top: 5px;
+      cursor: pointer;
+      @media #{$small_mobile} {
+        position: static;
+        margin-top: 6px;
+      }
+
+      @extend .btnElevation;
+      @media #{$tab} {
+        padding: 15px 15px;
+      }
+
+      &:active {
+        -moz-box-shadow: inset 0 0 0 rgba(#000000, 0);
+        -webkit-box-shadow: inset 0 0 0 rgba(#000000, 0);
+        box-shadow: inset 0 0 0 rgba(#000000, 0);
+      }
+      &:hover {
+        color: white;
+      }
+    }
+    ::placeholder {
+      color: #e4d3df;
+    }
+  }
+}
+
+/**********************footer part css*******************/
+.boxElevation {
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.footer_part {
+  .footer_iner {
+    background-color: $paletteColor5;
+    padding: 120px 0;
+    @extend .boxElevation;
+    @media #{$tab} {
+      padding: 70px 0;
+    }
+    @media #{$medium_device} {
+      padding: 100px 0;
+    }
+    .footer_menu {
+      display: flex;
+      align-items: center;
+      @media #{$tab} {
+        display: block;
+      }
+    }
+    .footer_logo {
+      a {
+        display: inline-block;
+        margin-right: 45px;
+        @media #{$medium_device} {
+          margin-right: 10px;
+        }
+      }
+    }
+    .footer_menu_item {
+      @media #{$tab} {
+        margin-top: 15px;
+      }
+      a {
+        display: inline-block;
+        color: $heading_color;
+        font-size: 16px;
+        padding: 0 17px;
+        @media #{$tab} {
+          padding: 0 15px 0 0;
+        }
+        @media #{$medium_device} {
+          padding: 0 7px;
+        }
+        &:hover {
+          color: $paletteColor2;
+        }
+      }
+    }
+  }
+  .social_icon {
+    text-align: right;
+    @media #{$tab} {
+      text-align: left;
+      margin-top: 25px;
+    }
+    a {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: $heading_color;
+      line-height: 45px;
+      color: $white;
+      display: inline-block;
+      text-align: center;
+      margin-right: 0.2em;
+      &:hover {
+        background-color: $paletteColor2;
+      }
+    }
+  }
+
+  .copyright_part {
+    background-color: $paletteColor1;
+    padding: 8px 0px;
+
+    .copyright_text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media #{$tab} {
+        display: block;
+      }
+      p {
+        a {
+          color: $heading_color;
+        }
+      }
+    }
+    .copyright_link {
+      @media #{$tab} {
+        margin-top: 20px;
+      }
+      a {
+        color: $heading_color;
+        margin-left: 40px;
+        @media #{$tab} {
+          margin-left: auto;
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+}
+
+.btn_1 {
+  display: inline-block;
+  padding: 9px 42px;
+  border-radius: 50px;
+  background-color: $btn_subs_color_hoov;
+  font-size: 15px;
+  font-weight: 700;
+  color: $white_color;
+  @include transform_time(0.5s);
+  &:hover {
+    //background-color: $paletteColor4;
+    color: $white;
+  }
+}

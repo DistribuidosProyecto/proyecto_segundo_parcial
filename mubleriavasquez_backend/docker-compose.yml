@@ -1,0 +1,40 @@
+version: "3.7"
+
+services: 
+  backend1:
+    build:
+      context: .
+    tty: true
+    volumes: 
+      - ./backend:/backend
+    command: sh -c "python manage.py runserver 127.0.0.1:8000"
+    environment: 
+      - DEBUG=1
+  backend2:
+    build:
+      context: .
+    tty: true
+    volumes: 
+      - ./backend:/backend
+    command: sh -c "python manage.py runserver 127.0.0.1:8000"
+    environment:
+      - DEBUG=1
+  backend3:
+    build:
+      context: .
+    tty: true
+    volumes:
+      - ./backend:/backend
+    command: sh -c "python manage.py runserver 127.0.0.1:8000"
+    environment:
+      - DEBUG=1
+  nginx: 
+    build: ./nginx
+    tty: true
+    links: 
+      - backend1
+      - backend2
+      - backend3
+    ports:
+      - "8080:8080"
+

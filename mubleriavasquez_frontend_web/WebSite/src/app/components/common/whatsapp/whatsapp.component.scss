@@ -1,0 +1,162 @@
+@import "../../../../assets/css/variables";
+/* ---------- Whatsapp BTN ---------- */
+.whatsappChat {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 30px;
+	right: 30px;
+	background-color: $whatsapp_color1;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $whatsapp_color2;
+	}
+	i {
+		color: $white;
+	}
+
+	@media #{$tab} {
+		bottom: 20px;
+		right: 20px;
+	}
+	@media #{$medium_device} {
+		bottom: 15px;
+		right: 15px;
+	}
+
+	@media #{$small_mobile} {
+		border-radius: 0;
+		border-top-left-radius: 15px;
+		width: 84px;
+		height: 36px;
+		bottom: 0;
+		right: 0;
+		i {
+			font-size: 25px;
+		}
+	}
+}
+
+/* ---------- Whatsapp LIVE-CHAT ---------- */
+
+.live-chat {
+	display: block;
+	flex-direction: column;
+	align-items: center;
+	bottom: 0;
+	font-size: 12px;
+	right: 16px;
+	position: fixed;
+	width: 300px;
+	z-index: 100;
+	background-color: white;
+	border-radius: 8px 8px 0 0;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+	@media #{$tab} {
+		width: 280px;
+		right: 10px;
+	}
+	@media #{$medium_device} {
+		right: 8px;
+		width: 280px;
+	}
+
+	@media #{$small_mobile} {
+		width: 75vw;
+		right: 5px;
+	}
+
+	.clearfix {
+		background: #293239;
+		border-radius: 8px 8px 0 0;
+		color: #fff;
+		cursor: pointer;
+		padding: 16px 24px;
+		width: 100%;
+		box-sizing: border-box;
+		h4,
+		a {
+			color: white;
+		}
+		h4 {
+			font-size: 12px;
+			line-height: 1.5em;
+			margin: 0;
+			&:before {
+				background: #4ab969;
+				border-radius: 50%;
+				content: "";
+				display: inline-block;
+				height: 8px;
+				margin: 0 8px 0 0;
+				width: 8px;
+			}
+		}
+		.chat-close {
+			background: #1b2126;
+			border-radius: 50%;
+			color: #fff;
+			display: block;
+			float: right;
+			font-size: 10px;
+			height: 16px;
+			line-height: 16px;
+			margin: 2px 0 0 0;
+			text-align: center;
+			width: 16px;
+		}
+	}
+
+	.chat {
+		background: #ffffff;
+		.chat-history {
+			height: 180px;
+			padding: 6px;
+			.chat-message {
+				.chat-message-content {
+					background: #293239;
+					padding: 12px 20px;
+					border-radius: 5px 5px 5px 5px;
+					p {
+						color: #ffffff;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	.go {
+		margin-bottom: 8px;
+		background-color: #4ab969;
+		padding: 8px 0px 8px 10px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+			0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+		display: flex;
+		justify-content: center;
+
+		a {
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			color: #ffffff;
+			text-decoration: none;
+		}
+	}
+}

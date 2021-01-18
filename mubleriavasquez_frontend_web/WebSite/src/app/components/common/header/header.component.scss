@@ -1,0 +1,241 @@
+@import "../../../../assets/css/variables";
+/**************menu part start*****************/
+.main_menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  .navbar-brand {
+    padding-top: 0rem;
+    padding-bottom: 0px;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .main-menu-item {
+    ul {
+      li {
+        @media #{$small_mobile} {
+          &:active {
+            background-color: $paletteColor2;
+            .nav-link {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .nav-link {
+        color: $menu-color;
+        font-size: 15px;
+        padding: 36px 23px;
+        font-family: $font_stack_1;
+        text-transform: capitalize;
+        line-height: 12px;
+        font-weight: 400;
+
+        &:hover {
+          color: $black_color;
+        }
+
+        @media #{$medium_device} {
+          padding: 35px 20px;
+        }
+      }
+    }
+  }
+
+  .active_color {
+    color: $paletteColor2 !important;
+  }
+  a {
+    i {
+      position: relative;
+      z-index: 1;
+      margin-left: 30px;
+    }
+  }
+  .user {
+    .dropdown-toggle::after {
+      display: inline-block;
+      margin-left: 0.255em;
+      vertical-align: 0.255em;
+      content: "";
+      border: 0px solid transparent;
+    }
+
+    i {
+      color: $paletteColor4;
+      font-size: 38px;
+      &:hover {
+        color: $btn_subs_color_hoov;
+      }
+    }
+  }
+}
+
+.dropdown {
+  .dropdown-menu {
+    transition: all 0.5s;
+    overflow: hidden;
+    transform-origin: top center;
+    transform: scale(1, 0);
+    display: block;
+    border: 0px solid transparent;
+    background-color: $paletteColor2;
+
+    .dropdown-item {
+      font-size: 14px;
+      padding: 8px 20px !important;
+      color: #fff !important;
+      background-color: $paletteColor2;
+      text-transform: capitalize;
+    }
+    .dropdown-item:hover {
+      background-color: #ac323f;
+    }
+  }
+
+  &:hover {
+    .dropdown-menu {
+      transform: scale(1);
+    }
+  }
+}
+
+@media #{$tab} {
+  .main_menu {
+    padding: 26px 0px;
+  }
+
+  .home_menu .main-menu-item {
+    padding-left: 0px;
+  }
+
+  .main_menu .main-menu-item {
+    text-align: left !important;
+
+    .nav-item {
+      padding: 10px 15px !important;
+
+      .nav-link {
+        padding: 5px 15px !important;
+        color: $black_color;
+        &:hover {
+          color: $paletteColor4;
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    z-index: 9999 !important;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    background-color: $white-color;
+    text-align: center !important;
+  }
+
+  .dropdown {
+    .dropdown-menu {
+      transform: scale(1, 0);
+      display: none;
+      margin-top: 10px;
+    }
+
+    &:hover {
+      .dropdown-menu {
+        transform: scale(1);
+        display: block;
+        color: $paletteColor2;
+      }
+    }
+
+    .dropdown-item:hover {
+      background-color: #ac323f;
+    }
+  }
+
+  .navbar-brand img {
+    max-width: 100px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    top: 0;
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: transparent;
+    position: absolute;
+    left: 0;
+  }
+
+  .menu_icon {
+    i {
+      color: $black_color;
+      font-size: 20px;
+    }
+  }
+}
+
+@media #{$small_mobile} {
+  .main_menu {
+    padding: 20px 0px;
+  }
+}
+
+@media #{$large_mobile} {
+  .main_menu {
+    padding: 20px 0px;
+  }
+}
+
+.dropdown-menu {
+  border: 0px solid rgba(0, 0, 0, 0.15) !important;
+  background-color: #fafafa;
+}
+
+.dropdown:hover {
+  .dropdown-menu {
+    display: block;
+  }
+}
+
+.home_menu {
+  .menu_btn {
+    &:hover a {
+      color: $white-color !important;
+    }
+  }
+
+  .main-menu-item {
+    justify-content: center !important;
+  }
+}
+
+.hearer_icon {
+
+display: flex;
+align-items: flex-end;
+  i {
+    color: $paletteColor2;
+	font-size: 22px;
+    &:hover {
+      color: $primary_color;
+    }
+  }
+}
+
+@media #{$small_mobile} {
+  .hearer_icon {
+    display: none !important;
+  }
+}

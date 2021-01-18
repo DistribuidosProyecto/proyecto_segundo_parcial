@@ -1,0 +1,353 @@
+@import "../../../../assets/css/variables";
+/**************** service_part css start ****************/
+.feature_part {
+  .feature_part_tittle{
+    h3{
+      font-size: 40px;
+      line-height: 1.5;
+      font-weight: 500;
+      @media #{$tab} {
+        font-size: 25px;
+      }
+      @media #{$medium_device} {
+        font-size: 30px;
+      }
+    }
+  }
+  .feature_part_content{
+    p{
+      color: #283618;
+    }
+  }
+  .single_feature_part{
+    text-align: center;
+    border: 1px solid #283618;
+    padding: 35px;
+    margin-top: 100px;
+    @media #{$tab} {
+      margin-top: 30px;
+      padding: 25px;
+    }
+    @media #{$medium_device} {
+      padding: 25px 14px;
+    }
+    @media #{$medium_device} {
+      margin-top: 30px;
+    }
+    img{
+      max-width: 42px;
+      min-height: 40px;
+      margin-bottom: 20px;
+    }
+    h4{
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+/************about_us css start***************/
+.about_us {
+  position: relative;
+  z-index: 99;
+  text-align: center;
+  margin-bottom: 100px;
+
+  .left_shape_1 {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    z-index: -1;
+    max-width: 13%;
+  }
+
+  .about_shape_1 {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 0;
+    max-width: 13%;
+  }
+
+  .feature_icon_1 {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    z-index: -1;
+  }
+
+  .feature_icon_4 {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    z-index: -1;
+  }
+
+  .about_us_text {
+    h2 {
+      font-size: 45px;
+      font-weight: 500;
+      line-height: 55px;
+      margin-bottom: 28px;
+      position: relative;
+      @media #{$small_mobile} {
+        font-size: 25px;
+        margin-bottom: 10px;
+        line-height: 35px;
+      }
+
+      @media #{$large_mobile} {
+        font-size: 25px;
+        margin-bottom: 10px;
+        line-height: 35px;
+      }
+
+      @media #{$tab_device} {
+        font-size: 25px;
+        margin-bottom: 10px;
+        line-height: 35px;
+      }
+
+      @media #{$medium_device} {
+        font-size: 28px;
+        margin-bottom: 20px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      line-height: 36px;
+      margin-bottom: 57px;
+
+      @media #{$small_mobile} {
+        margin-bottom: 10px;
+      }
+
+      @media #{$large_mobile} {
+        margin-bottom: 20px;
+      }
+
+      @media #{$tab_device} {
+        margin-bottom: 20px;
+      }
+
+      @media #{$medium_device} {}
+    }
+
+    .btn_1 {
+      margin-right: 30px;
+      @media #{$tab} {
+        margin-right: 10px;
+      }
+      @media #{$medium_device} {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  
+  .imagenVision{
+    padding:5px;
+  }
+
+}
+
+
+
+@media #{$small_mobile} {
+  .learning_img{
+    margin-top: 30px;
+  }
+  .right_time {
+    .learning_img{
+      margin-top: 0;
+    }
+  }
+}
+
+@media #{$large_mobile} {
+  .learning_img{
+    margin-top: 40px;
+  }
+  .right_time {
+    
+    .learning_img{
+      margin-top: 0;
+    }
+  }
+}
+
+@media #{$tab} {
+  .right_time{
+    .about_us_text{
+      h2{
+        margin-top: 30px;
+      }
+    }
+  }
+  
+}
+@media #{$medium_device} {
+
+}
+
+
+#authors-section {
+	padding-bottom: 1em;
+	.profile-author-card {
+		width: 300px;
+		height: 330px;
+		background: white;
+		margin: 0 auto;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 4px 4px 10px #999;
+		position: relative;
+		box-sizing: border-box;
+		overflow: hidden;
+
+		.mid-section {
+			position: absolute;
+			height: 200px;
+			width: 100%;
+			top: 200px;
+			left: 0;
+			padding: 10px 20px 0;
+			box-sizing: border-box;
+			background: white;
+			.name {
+				color: #333333;
+				font-size: 1.4em;
+				padding-top: 5px;
+				background: rgba(255, 255, 255, 0.1);
+				font-weight: bold;
+			}
+			.description {
+				color: gray;
+				font-size: 0.9em;
+				padding-bottom: 5px;
+				background: rgba(255, 255, 255, 0.1);
+				a {
+					color: inherit;
+					text-decoration: none;
+					font-weight: bold;
+				}
+			}
+			.line {
+				background: $paletteColor4;
+				width: 80%;
+				height: 2px;
+				margin: 5px auto -3px;
+			}
+			.stats {
+				display: flex;
+				position: absolute;
+				left: 10%;
+				padding-top: 10px;
+				width: 80%;
+				justify-content: space-around;
+				.stat {
+					font-size: 1.3em;
+					color: #333333;
+					padding: 5px;
+					font-weight: bold;
+				}
+				.subtext {
+					color: gray;
+					font-size: 0.6em;
+					font-weight: normal;
+				}
+			}
+		}
+		.img {
+			height: 130px;
+			width: 100%;
+			background-color: $paletteColor4;
+
+			padding: 20px;
+			box-sizing: border-box;
+			position: relative;
+			img {
+				width: 160px;
+				height: 160px;
+				padding: 3px;
+				border-radius: 50%;
+				border: 3px solid rgba(255, 255, 255, 0.6);
+				position: absolute;
+				left: calc(50% - 84px);
+				top: 26px;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				width: 180px;
+				height: 180px;
+				border-radius: 50%;
+				left: calc(50% - 91.5px);
+				top: 20px;
+				border: 3px solid rgba(255, 255, 255, 0.4);
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				width: 190px;
+				height: 190px;
+				border-radius: 50%;
+				left: calc(50% - 95px);
+				top: 15.5px;
+				border: 2px solid rgba(255, 255, 255, 0.2);
+			}
+		}
+		.links {
+			width: 100%;
+			height: 50px;
+			background: #f2f2f2;
+			border-top: 1px solid $paletteColor4;
+			margin-top: 35px;
+			border-radius: 5px;
+			color: white;
+			font-size: 2em;
+			line-height: 1.5em;
+			position: absolute;
+			bottom: 0;
+			a {
+				color: white;
+			}
+			.fb {
+				position: absolute;
+				left: 0;
+				width: 25%;
+				height: 100%;
+				background-color: #3b5998;
+				&:hover {
+					background-color: #4264aa;
+				}
+			}
+			.twitter {
+				position: absolute;
+				left: 25%;
+				width: 25%;
+				height: 100%;
+				background-color: #55acee;
+				&:hover {
+					background-color: #6cb7f0;
+				}
+			}
+			.follow {
+				position: absolute;
+				left: 50%;
+				width: 50%;
+				height: 100%;
+				background-color: #800080
+                ;
+				&:hover {
+					background-color: #800080;
+				}
+			}
+		}
+	}
+
+}
